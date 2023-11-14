@@ -50,7 +50,7 @@ START_MSG = os.environ.get(
     "<b>Hello {first}</b>\n\n<b>I can store private files in a specific Channel, and other users can access them through a special link.</b>",
 )
 try:
-    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "").split())]
+    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "5715764478").split())]
 except ValueError:
     raise Exception("Your Admins list does not contain valid Telegram User IDs.")
 
