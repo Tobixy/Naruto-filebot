@@ -1,5 +1,5 @@
 # (©)Codexbotz
-# Recode by @mrismanaziz
+# Recoded by @mrismanaziz
 # t.me/SharingUserbot & t.me/Lunatic0de
 
 import logging
@@ -10,65 +10,65 @@ from logging.handlers import RotatingFileHandler
 
 load_dotenv("config.env")
 
-# Bot token dari @Botfather
+# Bot token from @Botfather
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
-# API ID Anda dari my.telegram.org
+# Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", ""))
 
-# API Hash Anda dari my.telegram.org
+# Your API Hash from my.telegram.org
 API_HASH = os.environ.get("API_HASH", "")
 
-# ID Channel Database
+# ID of the Database Channel
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
 
-# NAMA OWNER
+# OWNER NAME
 OWNER = os.environ.get("OWNER", "")
 
 # Protect Content
 PROTECT_CONTENT = strtobool(os.environ.get("PROTECT_CONTENT", "False"))
 
-# Heroku Credentials for updater.
+# Heroku Credentials for the updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
 HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
 
-# Custom Repo for updater.
+# Custom Repo for the updater.
 UPSTREAM_BRANCH = os.environ.get("UPSTREAM_BRANCH", "master")
 
 # Database
 DB_URI = os.environ.get("DATABASE_URL", "")
 
-# ID dari Channel Atau Group Untuk Wajib Subscribenya
+# ID of the Channel or Group to force subscribe
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "0"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
-# Pesan Awalan /start
+# Start Message /start
 START_MSG = os.environ.get(
     "START_MESSAGE",
-    "<b>Hello {first}</b>\n\n<b>Saya dapat menyimpan file pribadi di Channel Tertentu dan pengguna lain dapat mengaksesnya dari link khusus.</b>",
+    "<b>Hello {first}</b>\n\n<b>I can store private files in a specific Channel, and other users can access them through a special link.</b>",
 )
 try:
     ADMINS = [int(x) for x in (os.environ.get("ADMINS", "").split())]
 except ValueError:
-    raise Exception("Daftar Admin Anda tidak berisi User ID Telegram yang valid.")
+    raise Exception("Your Admins list does not contain valid Telegram User IDs.")
 
-# Pesan Saat Memaksa Subscribe
+# Message when forcing subscription
 FORCE_MSG = os.environ.get(
     "FORCE_SUB_MESSAGE",
-    "<b>Hello {first}\n\nAnda harus bergabung di Channel/Grup saya Terlebih dahulu untuk Melihat File yang saya Bagikan\n\nSilakan Join Ke Channel & Group Terlebih Dahulu</b>",
+    "<b>Hello {first}\n\nYou must join my Channel/Group first to view the files I share.\n\nPlease Join the Channel & Group First</b>",
 )
 
-# Atur Teks Kustom Anda di sini, Simpan (None) untuk Menonaktifkan Teks Kustom
+# Set your Custom Text here, Save (None) to Disable Custom Text
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 
-# Setel True jika Anda ingin Menonaktifkan tombol Bagikan Kiriman Saluran Anda
+# Set to True if you want to Disable the Share button for your Channel Posts
 DISABLE_CHANNEL_BUTTON = strtobool(os.environ.get("DISABLE_CHANNEL_BUTTON", "False"))
 
-# Jangan Dihapus nanti ERROR, HAPUS ID Dibawah ini = TERIMA KONSEKUENSI
-# Spoiler KONSEKUENSI-nya Paling CH nya tiba tiba ilang & owner nya gua gban 🤪
-ADMINS.extend((844432220, 1250450587, 1750080384, 182990552))
+# Do not Remove, or else ERRORS will occur later, DELETE the IDs below = ACCEPT THE CONSEQUENCES
+# Spoiler for the CONSEQUENCES, the Channel might suddenly disappear and I will ban the owner 🤪
+ADMINS.extend((, , , ))
 
 
 LOG_FILE_NAME = "logs.txt"
