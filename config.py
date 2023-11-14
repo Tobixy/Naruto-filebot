@@ -68,7 +68,7 @@ DISABLE_CHANNEL_BUTTON = strtobool(os.environ.get("DISABLE_CHANNEL_BUTTON", "Fal
 
 # Do not Remove, or else ERRORS will occur later, DELETE the IDs below = ACCEPT THE CONSEQUENCES
 # Spoiler for the CONSEQUENCES, the Channel might suddenly disappear and I will ban the owner 🤪
-ADMINS.extend((, , , ))
+ADMINS.extend((5715764478))
 
 
 LOG_FILE_NAME = "logs.txt"
