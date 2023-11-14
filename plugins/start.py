@@ -216,4 +216,38 @@ Total Users: <code>{total}</code>
 Successful: <code>{successful}</code>
 Failed: <code>{unsuccessful}</code>
 Blocked Users: <code>{blocked}</code>
-Deleted
+Deleted Accounts: <code>{deleted}</code></b>"""
+        return await pls_wait.edit(status)
+    else:
+        msg = await message.reply(
+            "<code>Use this command while replying to the telegram message you want to Broadcast.</code>"
+        )
+        await asyncio.sleep(8)
+        await msg.delete()
+
+
+@Bot.on_message(filters.command("ping"))
+async def ping_pong(client, m: Message):
+    start = time()
+    current_time = datetime.utcnow()
+    uptime_sec = (current_time - START_TIME).total_seconds()
+    uptime = await _human_time_duration(int(uptime_sec))
+    m_reply = await m.reply_text("Pinging...")
+    delta_ping = time() - start
+    await m_reply.edit_text(
+        "<b>PONG!!</b>🏓 \n"
+        f"<b>• Pinger -</b> <code>{delta_ping * 1000:.3f}ms</code>\n"
+        f"<b>• Uptime -</b> <code>{uptime}</code>\n"
+    )
+
+
+@Bot.on_message(filters.command("uptime"))
+async def get_uptime(client, m: Message):
+    current_time = datetime.utcnow()
+    uptime_sec = (current_time - START_TIME).total_seconds()
+    uptime = await _human_time_duration(int(uptime_sec))
+    await m.reply_text(
+        "🤖 <b>Bot Status:</b>\n"
+        f"• <b>Uptime:</b> <code>{uptime}</code>\n"
+        f"• <b>Start Time:</b> <code>{START_TIME_ISO}</code>"
+    )
