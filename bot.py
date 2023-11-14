@@ -1,4 +1,4 @@
-```python
+
 # (©)Codexbotz
 # Recoded by @mrismanaziz
 # t.me/SharingUserbot & t.me/Lunatic0de
@@ -123,4 +123,4 @@ class Bot(Client):
     async def stop(self, *args):
         await super().stop()
         self.LOGGER(__name__).info("Bot stopped.")
-```
+
