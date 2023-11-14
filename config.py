@@ -11,19 +11,19 @@ from logging.handlers import RotatingFileHandler
 load_dotenv("config.env")
 
 # Bot token from @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "28374181")
 
 # Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", ""))
 
 # Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "")
+API_HASH = os.environ.get("API_HASH", "00b7ca7f535e816590db39e76f85d0c7")
 
 # ID of the Database Channel
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
 
 # OWNER NAME
-OWNER = os.environ.get("OWNER", "")
+OWNER = os.environ.get("OWNER", "tobiix")
 
 # Protect Content
 PROTECT_CONTENT = strtobool(os.environ.get("PROTECT_CONTENT", "False"))
@@ -68,7 +68,7 @@ DISABLE_CHANNEL_BUTTON = strtobool(os.environ.get("DISABLE_CHANNEL_BUTTON", "Fal
 
 # Do not Remove, or else ERRORS will occur later, DELETE the IDs below = ACCEPT THE CONSEQUENCES
 # Spoiler for the CONSEQUENCES, the Channel might suddenly disappear and I will ban the owner 🤪
-ADMINS.extend((844432220, 1250450587, 1750080384, 182990552))
+ADMINS.extend((6141526656, 1631866308, 1941179517, 1424231015))
 
 
 LOG_FILE_NAME = "logs.txt"
