@@ -2,11 +2,7 @@
   "name": "File Sharing Man",
   "description": "BOT Multi Force Subs File Sharing Bot is useful for storing files and can be accessed through a special link.",
   "stack": "heroku-22",
-  "keywords": [
-    "telegram",
-    "file",
-    "sharing"
-  ],
+  "keywords": ["telegram", "file", "sharing"],
   "logo": "https://telegra.ph/file/9dc4e335feaaf6a214818.jpg",
   "env": {
     "TG_BOT_TOKEN": {
@@ -15,11 +11,11 @@
     },
     "OWNER": {
       "description": "Input Telegram Username for BOT Owner [Exclude @]",
-      "value": ""
+      "value": "Rx_Animes"
     },
     "ADMINS": {
       "description": "Input User ID to grant Admin rights to the BOT [Use Space as a separator for User IDs]",
-      "value": "0"
+      "value": "5048278767 5740282189"
     },
     "APP_ID": {
       "description": "Get APP ID from my.telegram.org",
