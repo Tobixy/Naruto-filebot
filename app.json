@@ -52,16 +52,12 @@
     "FORCE_SUB_MESSAGE": {
       "description": "Force Subscribe bot message, Use HTML parse mode format",
       "value": "<b>Hello {first}\n\nYou must join my Channel/Group to use me\n\nPlease Join the Channel First</b>"
+    },
+    "DATABASE_URL": {
+      "description": "URL for the Heroku PostgreSQL database",
+      "value": ""
     }
   },
-  "addons": [
-    {
-      "plan": "heroku-postgresql",
-      "options": {
-        "version": "12"
-      }
-    }
-  ],
   "buildpacks": [
     {
       "url": "heroku/python"
