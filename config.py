@@ -36,7 +36,7 @@ HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
 UPSTREAM_BRANCH = os.environ.get("UPSTREAM_BRANCH", "master")
 
 # Database
-DB_URI = os.environ.get("DATABASE_URL", "postgres://jyhjthfd:jD-Kug_nB5e3I6HIkKETnAd6x_DIDJ5E@snuffleupagus.db.elephantsql.com/jyhjthfd")
+DB_URI = os.environ.get("DATABASE_URL", "postgres://rrqdvdez:icPxWx-GG7EKxam8H17GVfxC75ZaXxR3@balarama.db.elephantsql.com/rrqdvdez")
 
 # ID of the Channel or Group to force subscribe
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001598773095"))
